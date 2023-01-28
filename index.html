@@ -1,0 +1,158 @@
+<html>
+<head>
+<link rel="stylesheet" href="css/all.min.css">
+<link rel="stylesheet" href="css/mynewstyle.css">
+</head>
+<body onload="jm()">
+<div class="overlay">
+	<span id="close" style="cursor:pointer" onclick="yy()">X</span>
+	<div class="thumbnail">
+		<img src="" class="hh"/>
+		<p style="color:red" class="par"></p>
+	</div>		
+</div>
+
+
+
+<div class="landing">
+	<div class="header">
+		<ul style="list-style:none">
+			<li>Home</li>
+			<li>Gallery</li>
+			<li>FAQ</li>
+			<li><a href="contact.html">Contact us</a></li>
+			<li><a href="#eng" data-reload class="mylink">english</a></li>
+			<li>-----</li>
+			<li><a href="#ar"  data-reload class="mylink">عربي</a></li>
+	</div>
+	<img src="images/flower.png" id="jm"/>
+	<img src="images/flower.png" id="jm2"/>
+	<img src="images/flower.png" class="anit"/>
+</div>
+
+<div class="container">
+<div data-id="images/img1.jpg" class="tt" data-x="hello world ....">
+<img src="images/img1.jpg">
+</div>
+
+<div data-id="images/img2.jpg" class="tt" data-x="hello world 1...">
+<img src="images/img2.jpg">
+</div>
+
+<div data-id="images/img3.jpg" class="tt" data-x="hello world 2...">
+<img src="images/img3.jpg">
+</div>
+
+<div data-id="images/img4.jpg" class="tt" data-x="hello world 3...">
+<img src="images/img4.jpg">
+</div>
+
+<div data-id="images/img1.jpg" class="tt" data-x="hello world 5...">
+<img src="images/img1.jpg">
+</div>
+
+<div data-id="images/img2.jpg" class="tt" data-x="hello world 6...">
+<img src="images/img2.jpg">
+</div>
+
+<div data-id="images/img3.jpg" class="tt" data-x="hello world 7...">
+<img src="images/img3.jpg">
+</div>
+
+<div data-id="images/img4.jpg" class="tt" data-x="hello world 8...">
+<img src="images/img4.jpg">
+</div>
+</div>
+<div style="height:250px;background-color:yellow">
+<p id="hi">
+welcome every one
+</p>
+
+</div>
+
+<footer style="height:200px;bordeR:1px solid green"> 
+<DIV CLASS="socialMedia">
+	<div class="youtube">
+	<i class="fab fa-youtube"></i>
+	<span><Label>Youtube</Label></span>
+	</div>
+	<div class="youtube">
+	<i class="fab fa-twitter"></i>
+	<span><Label>Tweeter</Label></span>
+	</div>
+	<div class="youtube">
+	<i class="fab fa-facebook"></i>
+	<span><Label>FaceBook</Label></span>
+	</div>
+
+</div>
+</footer>
+<div class="flights">
+
+<a data-fslightbox href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Sayyid_Nasrallah.jpg/220px-Sayyid_Nasrallah.jpg" data-title="caption">
+	<img src="images/img1.jpg" alt="Image">
+</a>
+
+<a data-fslightbox href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Hassan_Nasrallah%27s_speech_in_May_2000_%282%29.png/220px-Hassan_Nasrallah%27s_speech_in_May_2000_%282%29.png" data-title="caption">
+	<img src="images/img2.jpg" alt="Image">
+</a>
+
+<a data-fslightbox href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Nasrallah_Khamenei_Soleimani.jpg/220px-Nasrallah_Khamenei_Soleimani.jpg" data-title="caption">
+	<img src="images/img3.jpg" alt="Image">
+</a>
+
+<a data-fslightbox href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Hassan_Nasrallah_meets_Khamenei_in_visit_to_Iran_%283_8405110291_L600%29.jpg/220px-Hassan_Nasrallah_meets_Khamenei_in_visit_to_Iran_%283_8405110291_L600%29.jpg" data-title="caption">
+	<img src="images/img4.jpg" alt="Image">
+</a>
+
+
+
+<div>
+
+</body>
+<script>
+
+var dataReload=document.querySelectorAll("[data-reload]");
+
+
+if (window.location.hash){
+			if (window.location.hash==='#ar'){
+				hi.textContent=language.ar.welcome;
+				
+			}
+	}
+
+//for(i=0;i<dataReload.length;i++){
+//dataReload[i].onclick=function(){
+
+//setTimeout(()=>{
+
+  //window.location.reload(true);
+//});
+//}
+//}
+
+var links=document.getElementsByClassName("mylink")[0];
+var vlinks=document.getElementsByClassName("mylink")[1];
+
+links.onclick=function(){
+setTimeout(()=>{
+
+  window.location.reload(true);
+});
+sessionStorage.setItem("language", "english");
+
+}
+vlinks.onclick=function(){
+setTimeout(()=>{
+
+  window.location.reload(true);
+});
+sessionStorage.setItem("language", "arabic");
+
+}
+</script>
+
+<script src="script/myfile.js"></script>
+<script src="script/fslightbox.js"></script>
+</html>

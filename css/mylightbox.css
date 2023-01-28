@@ -1,0 +1,43 @@
+*{
+	box-sizing:border-box;
+}
+.container{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.gallery{
+display:grid;
+grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+grid-gap:30px;
+}
+
+.gallery img{
+width:100%;
+}
+
+.test{
+	border:1px solid green;
+	display:flex;
+	justify-content: center;
+	margin-top:40px;
+	align-items:center;
+	height:80px;
+
+}
+
+.test span{
+	border:1px solid green;
+	display:inline-block;
+	width:40px;
+	height:40px;
+	border-radius:50%;
+	margin:0px 20px
+}
+.active{
+	background-color:black;
+}
+.unactive{
+	background-color:white;
+	
+}

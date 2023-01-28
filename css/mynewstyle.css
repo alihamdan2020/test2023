@@ -1,0 +1,138 @@
+*{
+margin:0;
+padding:0
+}
+.container{
+display:grid;
+grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+border:1px solid gray;
+margin:10px auto;
+width:80%;
+}
+.container div{
+cursor: pointer;
+}
+.container div img{
+width:100%;
+}
+.landing{
+height:100vh;
+background-color:red;
+}
+.landing #jm
+{
+top:-550;
+left:100;
+position:relative;
+transition:1.5s;
+}
+.landing #jm2{
+top:-550;
+left:900;
+position:relative;
+transition:1s;
+}
+.landing img:hover{
+
+transform:rotate(50deg)
+}
+.overlay{
+	position: fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100vh;
+	background-color: rgba(0,0,0, .9);
+	/* i use background-color with alpha as showen above insted of oppacity because opacity affect in whole elements exist inside */
+	/* in our example if i use opacity, the image nd the span will be display also with opacity */
+	display: none;
+	
+}
+.overlay span{
+	position:absolute;
+	top:20px;
+	right:20px;
+	color:red;
+}
+.thumbnail{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	width:600px;
+	display:flex;
+	flex-direction:column;
+}
+ul{
+display:flex;
+}
+.header{
+border:1px solid green;
+height:50px;
+display:flex;
+align-items:center
+}
+ul li{
+width:90px
+}
+.SocialMedia{
+height:200px;
+bordeR:0px solid green;
+width:150px
+}
+.socialMedia div{
+margin-bottom:10px;
+border:0px solid red;
+padding-left:5px;
+}
+.socialMedia div i{
+border:0px solid red;
+padding:5px;
+background-color:#ccc;
+transform:skewX(-12deg);
+}
+.socialMedia div span{
+background-color:gray;
+padding:5px;
+width:80px;
+display:inline-block;
+transform:skewX(-12deg);
+}
+.socialMedia div span label{
+color:white;
+transform:skewX(12deg);
+display:inline-block;
+}
+
+.landing .anit{
+position:absolute;
+right:30;
+animation-name: jm;
+animation-duration: 5s;
+animation-iteration-count: 1;
+animation-fill-mode: forwards;
+}
+@keyframes jm {
+  0% {
+top:-500px
+  }
+  100% {
+top:200px;
+  }
+}
+
+.flights{
+	width:80%;
+	margin:20px auto;
+	border:1px solid red;
+	display:flex;
+	justify-content:center;
+}
+.flights a img{
+	width:60px;
+	height:60px;
+	
+}
+.flights a{
+	margin-right:20px;
+}

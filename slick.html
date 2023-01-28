@@ -1,0 +1,104 @@
+<html>
+<head>
+<link rel="stylesheet" href="css/carouseller.css">
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="script/carouseller.mini.js"></script>
+<style>
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+.carouseller{
+position:relative;
+height:80vh;
+width:100vw;
+}
+.carouseller .carouseller__left{
+position:absolute;
+top:50%;
+left:30px;
+color:red;
+z-index:20;
+font-size:35px;
+text-decoration:none;
+}
+.carouseller .carouseller__right{
+position:absolute;
+top:50%;
+right:30px;
+z-index:20;
+color:red;
+font-size:35px;
+text-decoration:none;
+}
+.car__6{
+background-color:green;
+height:80vh;
+margin:0 !important;
+width:calc(100% / 7) !important;
+position:relative;
+}
+.car__6 p{
+position:absolute;
+top:20%;
+left:20%;
+-webkit-text-stroke: 1px red;
+-webkit-text-fill-color: transparent;
+font-size:106px;
+width:600px;
+}
+.car__6 img{
+width:100%;
+height:100%;
+}
+.carouseller__wrap{
+margin:0 !important
+}
+</style>
+</head>
+<body>
+
+<div id="fourd" class="carouseller"> 
+			<a href="javascript:void(0)" class="carouseller__left">‹</a> 
+			<div class="carouseller__wrap"> 
+				<div class="carouseller__list"> 
+					<div class="car__6">
+						<img src="images/1.jpg">
+						<p>This is Test 1</p>
+					</div>
+					<div class="car__6">
+						<img src="images/2.jpg">
+						<p>This is Test 2</p>
+					</div>
+					<div class="car__6">
+						<img src="images/3.jpg">
+					</div>
+					<div class="car__6">
+						<img src="images/4.jpg">
+					</div>
+					<div class="car__6">
+						<img src="images/5.jpg">
+					</div>
+					<div class="car__6">
+						<img src="images/6.jpg">
+					</div>
+					<div class="car__6">
+						<img src="images/7.jpg">
+					</div>
+				</div>
+			</div>
+			<a href="javascript:void(0)" class="carouseller__right">›</a>
+		</div>
+		<script type="text/javascript">
+			$(function() {
+				$('#fourd').carouseller({ 
+				scrollSpeed: 1900,
+				easing: 'linear'
+  });
+			});
+		</script>
+		
+	</div>
+</body>
+</html>

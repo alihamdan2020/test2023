@@ -1,0 +1,83 @@
+<html>
+<head>
+<link rel="stylesheet" href="css/mylightbox.css">
+<link rel="stylesheet" href="css/lightbox.css">
+<link rel="stylesheet" href="css/mylightbox.css">
+</head>
+<body>
+<div class="container">
+	<div class="gallery">
+		<a href="images/1.jpg" data-lightbox="models" data-title="picture 1">
+		<img src="images/1.jpg">
+		</a>
+		
+		<a href="images/2.jpg" data-lightbox="models" data-title="picture 1">
+		<img src="images/2.jpg">
+		</a>
+		
+		<a href="images/3.jpg" data-lightbox="models" data-title="picture 2">
+		<img src="images/3.jpg">
+		</a>
+		
+		<a href="images/4.jpg" data-lightbox="models" data-title="picture 3">
+		<img src="images/4.jpg">
+		</a>
+		
+		<a href="images/5.jpg" data-lightbox="models" data-title="picture 4">
+		<img src="images/5.jpg">
+		</a>
+				<a href="images/6.jpg" data-lightbox="models" data-title="picture 5">
+		<img src="images/6.jpg">
+		</a>
+				<a href="images/7.jpg" data-lightbox="models" data-title="picture 6">
+		<img src="images/7.jpg">
+		</a>
+				<a href="images/8.jpg" data-lightbox="models" data-title="picture 7">
+		<img src="images/8.jpg">
+		</a>
+	</div>
+</div>
+<div class="test">
+<span class="first"></span>
+<span></span>
+<span></span>
+<span></span>
+</div>
+<script src="script/lightbox-plus-jquery.js"></script>
+<script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+	  
+    })
+</script>
+<script>
+var fst=document.getElementsByClassName("first")[0];
+fst.classList.add("active");
+var a =document.querySelectorAll(".test span");
+
+var b=Array.from(a);
+alert(b.length);
+
+
+
+b.forEach(function(span){
+	span.addEventListener("click",function(){
+		
+
+		b.forEach(function(sp){
+		sp.classList.remove("active");
+		})
+
+		this.classList.add("active");
+	})
+})
+
+
+
+
+</script>
+</body>
+</html>
+
+
