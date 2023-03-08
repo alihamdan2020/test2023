@@ -3,6 +3,7 @@
 <link rel="stylesheet" href="css/carouseller.css">
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src="script/carouseller.mini.js"></script>
+
 <style>
 *{
 box-sizing:border-box;
@@ -38,6 +39,7 @@ height:80vh;
 margin:0 !important;
 width:calc(100% / 7) !important;
 position:relative;
+border:1px solid green;
 }
 .car__6 p{
 position:absolute;
@@ -51,6 +53,7 @@ width:600px;
 .car__6 img{
 width:100%;
 height:100%;
+
 }
 .carouseller__wrap{
 margin:0 !important
@@ -127,6 +130,7 @@ margin:0 !important
 	<span data-color="red"></span>
 	<span data-color="yellow"></span>
 	<span data-color="green"></span>
+	<span>
 	<script>
 	var col=document.querySelectorAll("span");
 	col.forEach(function(a) {
@@ -139,5 +143,7 @@ margin:0 !important
 	});
 	</script>
 	</div>
+	
+	
 </body>
 </html>

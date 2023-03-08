@@ -6,8 +6,8 @@
 .carouseller [class*="car__"]{
 	display: inline-block; 
 	position: relative;
-    margin-left: 0.2564102564102564% !important;
-    *margin-left: 0.25109110747408616% !important;
+    margin-left: 0 !important;
+    *margin-left: 0 !important;
     float: left;
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
@@ -24,8 +24,8 @@
 .carouseller .car__2 { width: 1.452991452991453%;}
 .carouseller .car__1 { width: 0.5982905982905983%;}
 
-.carouseller .carouseller__list { position: relative; width: 997.4358974358974%;}
-.carouseller .carouseller__wrap { overflow: hidden; position: relative; margin: 0 35px}
+.carouseller .carouseller__list { position: relative; width: 700%;}
+.carouseller .carouseller__wrap { overflow: hidden; position: relative; margin: 0 0px}
 
 .carouseller .carouseller__left, 
 .carouseller .carouseller__right {
